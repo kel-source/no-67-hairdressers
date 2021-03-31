@@ -1,0 +1,15 @@
+h6 {
+  font-weight: lighter;
+  font-size: xx-small;
+  color: var(--accent-color);
+  margin-top: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: right;
+}
+a {
+  text-decoration: none;
+}
+.open-source-link,
+.open-source-link:hover {
+  color: #3edce0;
+}
