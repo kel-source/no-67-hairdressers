@@ -1,6 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
   background-image: url("/media/image.png");
-  max-height: 100vh;
+  max-height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-x: right;
@@ -11,6 +15,11 @@ h1,
 h2 {
   font-family: "Cormorant Garamond", serif;
   font-size: 6vw;
+  font-weight: bold;
+}
+h3,
+h5 {
+  font-family: "Cormorant Garamond", serif;
   font-weight: bold;
 }
 hr {
@@ -36,12 +45,8 @@ h6 {
 .bg {
   background-color: rgb(248, 248, 246, 0.7);
 }
-.col-sm-7 {
-  display: relative;
-}
 .hero {
   margin-top: 300px;
-  display: absolute;
 }
 .hr {
   width: 50vw;
@@ -56,15 +61,28 @@ h6 {
 }
 
 @media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .sm-bg {
+    background-color: white;
+  }
   .row .bg {
     background-color: rgb(248, 248, 246, 0);
   }
-  .hero {
+  .hero,
+  .fixed-top .bg {
     background-color: rgb(248, 248, 246, 0.7);
   }
 }
 @media (min-width: 988px) {
-  .hero h2 {
+  h1 {
+    font-size: 90px;
+  }
+  h2 {
     font-size: 60px;
   }
 }
