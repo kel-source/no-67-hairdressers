@@ -1,3 +1,13 @@
+body {
+  background-image: url("/media/image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: right;
+  background-position-y: top;
+  background-color: #f8f8f6;
+}
+
 h6 {
   font-weight: lighter;
   font-size: xx-small;
@@ -6,15 +16,44 @@ h6 {
   font-family: "Roboto Condensed", sans-serif;
   text-align: right;
 }
+hr {
+  background-color: black;
+}
 a {
   text-decoration: none;
 }
 
 .navbar-nav {
+  width: 100%;
+  font-weight: bold;
+}
+.bg {
+  background-color: rgb(248, 248, 246, 0.7);
+}
+.col-sm-6 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero {
   margin: 0 auto;
+  font-weight: bold;
+}
+.hero h2 {
+  font-size: 6vw;
+  font-weight: bold;
+}
+.hero .hr-top {
+  margin-top: 110px;
 }
 
 .open-source-link,
 .open-source-link:hover {
   color: #3edce0;
+}
+
+@media (min-width: 988px) {
+  .hero h2 {
+    font-size: 60px;
+  }
 }

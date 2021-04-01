@@ -32,9 +32,10 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <header class="fixed-top text-center">
-      <h1 class="my-4">No. 67 Hairdressers</h1>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <header class="fixed-top bg text-center">
+      <h1 class="font-weight-bold my-4">No. 67 Hairdressers</h1>
+      <hr />
+      <nav class="navbar navbar-expand-sm navbar-light">
         <button
           class="navbar-toggler btn-block my-2"
           type="button"
@@ -47,7 +48,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav d-flex justify-content-around">
             <a class="nav-link active px-4" href="/">Home</a>
             <a class="nav-link px-4" href="#">Gallery</a>
             <a class="nav-link px-4" href="#">Contact</a>
@@ -57,7 +58,26 @@
         </div>
       </nav>
     </header>
-    <footer class="fixed-bottom pr-2">
+
+    <div class="row no-gutters">
+      <div class="col-sm-6 bg text-center">
+        <div class="hero rounded p-5">
+          <hr class="hr-top" />
+          <h2>
+            Welcome to our <br />
+            little salon!
+          </h2>
+          <p>OLD AMERSHAM</p>
+          <button type="button" class="btn btn-info btn-block">
+            Book an appointment
+          </button>
+          <hr />
+        </div>
+      </div>
+      <div class="col-6"></div>
+    </div>
+
+    <footer class="fixed-bottom pr-2 bg">
       <h6>
         <a
           href="https://github.com/kel-source/no-67-hairdressers"
