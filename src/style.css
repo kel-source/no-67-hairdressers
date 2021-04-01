@@ -1,50 +1,53 @@
 body {
   background-image: url("/media/image.png");
-  background-size: cover;
+  max-height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-x: right;
-  background-position-y: top;
   background-color: #f8f8f6;
+}
+
+h1,
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 6vw;
+  font-weight: bold;
+}
+hr {
+  background-color: cadetblue;
+}
+a {
+  text-decoration: none;
 }
 
 h6 {
   font-weight: lighter;
   font-size: xx-small;
   color: var(--accent-color);
-  margin-top: 10px;
   font-family: "Roboto Condensed", sans-serif;
   text-align: right;
-}
-hr {
-  background-color: black;
-}
-a {
-  text-decoration: none;
 }
 
 .navbar-nav {
   width: 100%;
   font-weight: bold;
 }
+
 .bg {
   background-color: rgb(248, 248, 246, 0.7);
 }
-.col-sm-6 {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+.col-sm-7 {
+  display: relative;
 }
 .hero {
-  margin: 0 auto;
-  font-weight: bold;
+  margin-top: 300px;
+  display: absolute;
 }
-.hero h2 {
-  font-size: 6vw;
-  font-weight: bold;
+.hr {
+  width: 50vw;
 }
-.hero .hr-top {
-  margin-top: 110px;
+.top {
+  margin-top: 10%;
 }
 
 .open-source-link,
@@ -52,6 +55,14 @@ a {
   color: #3edce0;
 }
 
+@media (max-width: 576px) {
+  .row .bg {
+    background-color: rgb(248, 248, 246, 0);
+  }
+  .hero {
+    background-color: rgb(248, 248, 246, 0.7);
+  }
+}
 @media (min-width: 988px) {
   .hero h2 {
     font-size: 60px;
