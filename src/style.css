@@ -1,3 +1,10 @@
+:root {
+  --heading-font: "Cormorant Garamond", serif;
+  --background-color: 248, 248, 246;
+  --navbar-color: white;
+  --accent-color: cadetblue;
+}
+
 html,
 body {
   height: 100%;
@@ -8,53 +15,51 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-x: right;
-  background-color: #f8f8f6;
+  background-color: var(--background-color);
 }
 
 h1,
 h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: bold;
-}
-h3,
-h5 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--heading-font);
   font-weight: bold;
 }
 h1 {
-  background-color: white;
+  background-color: var(--navbar-color);
   font-size: 10vw;
 }
 h2 {
   font-size: 7vw;
 }
+h3,
+h5 {
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
 hr {
-  background-color: cadetblue;
+  background-color: var(--accent-color);
 }
 a {
   text-decoration: none;
 }
 
 h6 {
-  font-weight: lighter;
+  font-weight: light;
   font-size: xx-small;
-  color: var(--accent-color);
-  font-family: "Roboto Condensed", sans-serif;
   text-align: right;
 }
 
 .navbar-nav {
   width: 100%;
   font-weight: bold;
-  background-color: white;
+  background-color: var(--navbar-color);
 }
-
 .bg {
-  background-color: rgb(248, 248, 246, 0.7);
+  background-color: rgb(var(--background-color), 0.7);
 }
 
 .hero {
-  margin-top: 300px;
+  margin-top: 45vh;
 }
 .hr {
   width: 50vw;
@@ -65,22 +70,15 @@ h6 {
 
 .open-source-link,
 .open-source-link:hover {
-  color: #3edce0;
+  color: var(--accent-color);
 }
 
 @media (max-width: 576px) {
   .sm-bg {
-    background-color: white;
-  }
-  .row .bg {
-    background-color: rgb(248, 248, 246, 0);
+    background-color: var(--navbar-color);
   }
   .hero {
-    margin-top: 42vh;
-  }
-  .hero,
-  .fixed-top .bg {
-    background-color: rgb(248, 248, 246, 0.7);
+    margin-top: 40vh;
   }
 }
 @media (min-width: 988px) {
