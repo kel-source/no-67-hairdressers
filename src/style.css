@@ -7,7 +7,6 @@
 
 html,
 body {
-  height: 100%;
   background-color: var(--background-color);
 }
 
@@ -18,7 +17,7 @@ h2 {
 }
 h1 {
   background-color: var(--navbar-color);
-  font-size: 10vw;
+  font-size: 7vw;
 }
 h2 {
   font-size: 7vw;
@@ -47,21 +46,27 @@ h6 {
   font-weight: bold;
   background-color: var(--navbar-color);
 }
-.bg {
-  background-color: rgb(var(--background-color), 0.7);
-}
-.container {
-  margin-top: 250px;
+.wrapper {
+  padding-top: 220px;
 }
 
 .hero {
-  margin-top: 45vh;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.md-spacer {
+  margin-top: 250px;
 }
 .hr {
   width: 50vw;
 }
-.top {
-  margin-top: 10%;
+
+.gallery {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .price-subtitle {
@@ -83,15 +88,15 @@ h6 {
   .sm-bg {
     background-color: var(--navbar-color);
   }
-  .hero {
-    margin-top: 40vh;
-  }
 }
 @media (min-width: 988px) {
   h1 {
-    font-size: 90px;
+    font-size: 70px;
   }
   h2 {
-    font-size: 60px;
+    font-size: 40px;
+  }
+  .wrapper {
+    padding-top: 250px;
   }
 }
