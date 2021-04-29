@@ -1,21 +1,13 @@
 :root {
   --heading-font: "Cormorant Garamond", serif;
-  --background-color: 248, 248, 246;
+  --background-color: #ede9df;
   --navbar-color: white;
   --accent-color: cadetblue;
-  --primary-color: #ede9df;
 }
 
 html,
 body {
   height: 100%;
-}
-
-body {
-  background-image: url("/media/salon.jfif");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: right;
   background-color: var(--background-color);
 }
 
