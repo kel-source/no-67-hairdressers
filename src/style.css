@@ -50,6 +50,9 @@ h6 {
 .bg {
   background-color: rgb(var(--background-color), 0.7);
 }
+.container {
+  margin-top: 250px;
+}
 
 .hero {
   margin-top: 45vh;
@@ -59,6 +62,11 @@ h6 {
 }
 .top {
   margin-top: 10%;
+}
+
+.price-subtitle {
+  font-size: 16px;
+  text-decoration: underline;
 }
 
 .open-source-link,
