@@ -3,6 +3,7 @@
   --background-color: 248, 248, 246;
   --navbar-color: white;
   --accent-color: cadetblue;
+  --primary-color: #ede9df;
 }
 
 html,
@@ -11,7 +12,7 @@ body {
 }
 
 body {
-  background-image: url("/media/image.png");
+  background-image: url("/media/salon.jfif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-x: right;
@@ -71,6 +72,11 @@ h6 {
 .open-source-link,
 .open-source-link:hover {
   color: var(--accent-color);
+}
+
+.fa-spider:hover {
+  transition: 1s;
+  transform: rotateX(180deg);
 }
 
 @media (max-width: 576px) {
