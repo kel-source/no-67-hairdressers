@@ -1,7 +1,7 @@
 :root {
   --heading-font: "Cormorant Garamond", serif;
   --background-color: #ede9df;
-  --navbar-color: white;
+  --navbar-color: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
   --accent-color: cadetblue;
 }
 
@@ -20,7 +20,7 @@ h2 {
   font-weight: bold;
 }
 h1 {
-  background-color: var(--navbar-color);
+  background-image: var(--navbar-color);
   font-size: 7vw;
 }
 h2 {
@@ -31,7 +31,9 @@ h5 {
   font-family: var(--heading-font);
   font-weight: bold;
 }
-
+hr {
+  background-color: #74ebd5;
+}
 a {
   text-decoration: none;
 }
@@ -45,7 +47,7 @@ h6 {
 .navbar-nav {
   width: 100%;
   font-weight: bold;
-  background-color: var(--navbar-color);
+  background-image: var(--navbar-color);
 }
 .wrapper {
   padding-top: 220px;
@@ -75,14 +77,14 @@ h6 {
 .hr {
   width: 50vw;
 }
+.btn {
+  background-image: var(--navbar-color);
+}
 
 .gallery {
   display: block;
   margin: 0 auto;
   width: 95%;
-}
-.img-fluid {
-  width: 200px;
 }
 .price-subtitle {
   font-size: 16px;
