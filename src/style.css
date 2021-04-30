@@ -2,7 +2,7 @@
   --heading-font: "Cormorant Garamond", serif;
   --background-color: #ede9df;
   --navbar-color: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
-  --accent-color: cadetblue;
+  --accent-color: #74ebd5;
 }
 
 html,
@@ -32,7 +32,7 @@ h5 {
   font-weight: bold;
 }
 hr {
-  background-color: #74ebd5;
+  background-color: var(--accent-color);
 }
 a {
   text-decoration: none;
@@ -79,20 +79,38 @@ h6 {
 }
 .btn {
   background-image: var(--navbar-color);
+  margin: 0 auto;
 }
 
-.gallery {
-  display: block;
-  margin: 0 auto;
-  width: 95%;
-}
 .price-subtitle {
   font-size: 16px;
   text-decoration: underline;
 }
 
+.contact-link {
+  font-size: 100px;
+  color: black;
+}
+.contact-link:hover {
+  transition: 1.25s;
+  transform: rotateZ(360deg);
+}
+.fa-facebook-square:hover {
+  color: #0572e6;
+}
+.fa-instagram-square:hover {
+  color: #c01f6a;
+}
+.fa-whatsapp-square:hover {
+  color: #35bb48;
+}
+.fa-envelope-square:hover {
+  color: #ac2f20;
+}
+
 .open-source-link,
-.open-source-link:hover {
+.open-source-link:hover,
+.fa-spider {
   color: var(--accent-color);
 }
 
