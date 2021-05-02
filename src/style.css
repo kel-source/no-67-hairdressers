@@ -52,7 +52,6 @@ h6 {
 .navbar-nav {
   width: 100%;
   font-weight: bold;
-  background-image: var(--navbar-color);
 }
 .wrapper {
   padding-top: clamp(170px, 25vw, 215px);
