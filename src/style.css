@@ -55,7 +55,7 @@ h6 {
   background-image: var(--navbar-color);
 }
 .wrapper {
-  padding-top: 170px;
+  padding-top: clamp(170px, 25vw, 215px);
 }
 .fas,
 .fab {
@@ -92,6 +92,9 @@ h6 {
   text-decoration: underline;
 }
 
+.contact-wrapper {
+  padding-top: clamp(150px, 31vw, 240px);
+}
 .contact-link {
   font-size: 100px;
   color: black;
@@ -134,9 +137,6 @@ h6 {
   }
   h2 {
     font-size: 40px;
-  }
-  .wrapper {
-    padding-top: 250px;
   }
   .front-page h2 {
     font-size: 160px;
