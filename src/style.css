@@ -120,6 +120,9 @@ h6 {
 .fa-envelope-square:hover {
   color: #ac2f20;
 }
+.fa-map-marker-alt:hover {
+  color: #f78e24;
+}
 
 .open-source-link,
 .open-source-link:hover,
