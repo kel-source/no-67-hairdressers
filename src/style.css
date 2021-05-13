@@ -1,8 +1,7 @@
 :root {
   --heading-font: "Cormorant Garamond", serif;
   --background-color: #ede9df;
-  --navbar-color: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
-  --accent-color: #74ebd5;
+  --accent-color: black;
 }
 
 html,
@@ -20,9 +19,10 @@ h2 {
   font-weight: bold;
 }
 h1 {
-  background-image: var(--navbar-color);
+  border-style: solid;
   font-size: 7vw;
   margin-bottom: 0px;
+  background-color: var(--background-color);
 }
 h2 {
   font-size: 7vw;
@@ -63,14 +63,19 @@ h6 {
 
 .front-page {
   height: 70vh;
-  margin-top: 35vh;
+  margin-top: 28vh;
 }
 .front-page h2 {
   font-family: "Great Vibes", cursive;
-  font-size: 18vw;
+  font-size: 16vw;
 }
 .front-page h5 {
   font-size: 3vw;
+}
+.salon-img {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
 }
 .hero {
   margin: 5%;
@@ -82,7 +87,8 @@ h6 {
   width: 50vw;
 }
 .btn {
-  background-image: var(--navbar-color);
+  border: black;
+  border-style: solid;
   margin: 0 auto;
 }
 
